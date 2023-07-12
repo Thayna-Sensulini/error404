@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    /* texto sublinhado*/
+    list-style: none;
+}
+
+
+body {
+    background-color: #000013;
+    overflow: hidden;
+    /*overflow é a rolagem*/
+}
+
+head {
+    position: fixed;
+    width: 100%;
+    padding: 40px 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-size: bold;
+    color: #D6D6F2;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav ul li a {
+    color: #151557;
+    font-size: 1.5rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.section {
+    height: 100vh;
+    padding: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left p {
+    font: 2.3rem;
+    color: #BF7BFB;
+    margin-bottom: 10px;
+}
+
+.left h4 {
+    font-size: 2.5rem;
+    color: #212187;
+    margin-bottom: 2rem;
+}
+
+.left h3 {
+
+    font-size: 1rem;
+    color: #212187;
+    margin-bottom: 1.5rem;
+}
+
+.left .btn {
+    padding: 1.5rem 1.3rem;
+    background-color: #BF7BFB;
+    border-radius: 15px;
+    color: #D6D6F2;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.left .btn houver {
+    box-shadow: 0 1px 4px white;
+
+}
+
+.right>img {
+    width: 300px;
+    margin-bottom: 1rem;
+    animation: float 1.8s infinite alternate;
+}
+
+.right .shadow {
+    width: 300px;
+    height: 45px;
+    background: hsla(0, 0%, 100%, 0.16);
+    border-radius: 50%;
+    margin: 0 auto;
+    filter: blur(5px);
+    animation: shadow 1.8s infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(15);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(.85, .85);
+    }
+}
